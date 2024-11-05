@@ -13,9 +13,10 @@ status = page.status_code
 soup = BeautifulSoup(page.content, "html.parser")
 
 data = soup.find("table").text
+# Converting into byte to save as file
 datas = data.encode()
 
-
+# saving data as json file
 with open('data.json','wb') as f:
     f.write(datas)
     f.close()
