@@ -1,0 +1,19 @@
+[project]
+name = "youtube-video-download"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Janarthanan K", email = "janakarthi1911@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "yt-dlp>=2026.8.19",
+]
+
+[project.scripts]
+youtube-video-download = "youtube_video_download:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
