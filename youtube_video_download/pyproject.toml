@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
+    "ffmpeg>=1.4",
     "yt-dlp>=2026.8.19",
 ]
 
